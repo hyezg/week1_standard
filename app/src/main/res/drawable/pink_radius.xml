@@ -6,12 +6,12 @@
             <solid android:color="@color/pink"/>
             <corners
                 android:topRightRadius="15dp"
-                android:topLeftRadius="0dp"
+                android:topLeftRadius="15dp"
                 android:bottomRightRadius="15dp"
-                android:bottomLeftRadius="0dp"
+                android:bottomLeftRadius="15dp"
             />
-            <!--<stroke android:width="2dp"
-                android:color="@color/pink"/>-->
+            <stroke android:width="4dp"
+                android:color="@color/black"/>
 
         </shape>
     </item>
