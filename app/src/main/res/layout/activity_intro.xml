@@ -66,9 +66,7 @@
         android:layout_marginTop="660dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/left_pink_radius"
-
         android:gravity="center"
-
         android:text="Sign in"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -76,7 +74,8 @@
         app:layout_constraintEnd_toStartOf="@id/btnreg"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="loginActivity"/>
 
     <TextView
         android:id="@+id/textsign"
