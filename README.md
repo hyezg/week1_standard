@@ -10,3 +10,7 @@
 - EditText에 underLine도 없애보세요.
 - 컴포넌트를 둥글게 즉 radius를 적용해보세요.
 - 이미지뷰에 svg파일도 적용해보세요.
+
+일정 계획<br>
+Layout : intro 구성하기
+Layout : login 구성하기
