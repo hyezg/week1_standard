@@ -25,7 +25,7 @@
 - [x] Layout-intro 시작하기
 
 **3/21**
-- [ ] Layout-login 시작하기
+- [x] Layout-login 시작하기
 
 **3/22**
 - [x] 버튼 이벤트 만들어서 화면 이동 성공하기
