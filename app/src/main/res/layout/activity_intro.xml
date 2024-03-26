@@ -9,11 +9,12 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_view"
         android:layout_width="400dp"
         android:layout_height="420dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/black_pink_radius"
+        android:contentDescription="앱의 로고가 띄어질 부분"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,31 +22,31 @@
         app:srcCompat="@drawable/black_pink_radius" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/text_title1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="450dp"
         android:text="Discover Your"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/text_title2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="485dp"
         android:text="Own Dream House"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/text_long"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -55,67 +56,67 @@
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam maecenas mi non sed ut odio. Non, justo, sed facilisi et. Eget viverra urna, vestibulum egestas faucibus egestas. Sagittis nam velit volutpat eu nunc."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView2" />
+        app:layout_constraintTop_toBottomOf="@id/text_title2" />
 
     <!--chain packed-->
     <ImageButton
-        android:id="@+id/btnsign"
+        android:id="@+id/btn_signIn"
         android:layout_width="197dp"
         android:layout_height="65dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="660dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/left_pink_radius"
+        android:contentDescription="sign in 버튼"
         android:gravity="center"
+        android:onClick="loginActivity"
         android:text="Sign in"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/btnreg"
+        app:layout_constraintEnd_toStartOf="@id/btn_register"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="loginActivity"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textsign"
+        android:id="@+id/text_signIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Sign in"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/btnsign"
-        app:layout_constraintEnd_toEndOf="@id/btnsign"
-        app:layout_constraintStart_toStartOf="@id/btnsign"
-        app:layout_constraintTop_toTopOf="@id/btnsign" />
+        app:layout_constraintBottom_toBottomOf="@id/btn_signIn"
+        app:layout_constraintEnd_toEndOf="@id/btn_signIn"
+        app:layout_constraintStart_toStartOf="@id/btn_signIn"
+        app:layout_constraintTop_toTopOf="@id/btn_signIn" />
 
     <ImageButton
-        android:id="@+id/btnreg"
+        android:id="@+id/btn_register"
         android:layout_width="150dp"
         android:layout_height="65dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/right_gray_radius"
-        app:layout_constraintBottom_toBottomOf="@id/btnsign"
+        android:contentDescription="registar 버튼"
+        app:layout_constraintBottom_toBottomOf="@id/btn_signIn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btnsign"
-        app:layout_constraintTop_toTopOf="@id/btnsign"
-        app:srcCompat="@drawable/right_gray_radius"
-        tools:layout_editor_absoluteX="200dp"
-        tools:layout_editor_absoluteY="627dp" />
+        app:layout_constraintStart_toEndOf="@id/btn_signIn"
+        app:layout_constraintTop_toTopOf="@id/btn_signIn"
+        app:srcCompat="@drawable/right_gray_radius" />
 
     <TextView
-        android:id="@+id/textreg"
+        android:id="@+id/text_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
         android:textColor="@color/b_gray"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/btnreg"
-        app:layout_constraintEnd_toEndOf="@id/btnreg"
-        app:layout_constraintStart_toStartOf="@id/btnreg"
-        app:layout_constraintTop_toTopOf="@id/btnreg" />
+        app:layout_constraintBottom_toBottomOf="@id/btn_register"
+        app:layout_constraintEnd_toEndOf="@id/btn_register"
+        app:layout_constraintStart_toStartOf="@id/btn_register"
+        app:layout_constraintTop_toTopOf="@id/btn_register" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
